@@ -1,0 +1,26 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+      # Add any dependencies you need here
+
+  pre_build:
+    commands:
+      - echo "Running pre-build steps..."
+      # Commands to run before the build phase
+
+  build:
+    commands:
+      - echo "Building the application..."
+      # Commands for the actual build process (if any, for HTML there might be nothing)
+
+  post_build:
+    commands:
+      - echo "Running post-build steps..."
+      # Commands for post-build steps, like tests or deployment triggers
+
+artifacts:
+  files:
+    - '**/*'  # Includes all files in the build artifact
